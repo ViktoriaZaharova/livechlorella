@@ -2,6 +2,19 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px)
+	.page-section
+		padding-top: 80px
+		padding-bottom: 80px
+
+	.pb-110
+		padding-bottom: 80px
+
+	.uniqueness
+		.btn
+			margin: 24px 0 0
+
+	.review-author
+		margin-top: 8px
 
 @media only screen and (max-width: 992px)
 
@@ -14,6 +27,15 @@
 @media only screen and (max-width: 420px)
 
 @media only screen and (max-width: 370px)
+
+@media screen and (min-width: 1024px)
+	.numbers-box
+		flex: 1
+		padding: 48px
+		&:not(:first-child)
+			border-top: 0.1rem solid #FAFAFA
+			border-right: 0.1rem solid #FAFAFA
+			border-bottom: 0.1rem solid #FAFAFA
 
 @media screen and (min-width: 1200px)
 	h1
@@ -53,8 +75,11 @@
 			background-color: #134925
 
 	.page-section
-		padding-top: 11rem
-		padding-bottom: 11rem
+		padding-top: 110px
+		padding-bottom: 110px
+
+	.pb-110
+		padding-bottom: 110px
 
 	.home
 		position: relative
@@ -76,8 +101,8 @@
 			background-color: #FAFAFA
 			z-index: -1
 		.box-text
-			margin-top: 1.2em
-			margin-bottom: 2.4em
+			margin-top: 20px
+			margin-bottom: 38px
 			color: #47554C
 
 	.home-content
@@ -108,6 +133,214 @@
 		left: 41.38888889% !important
 		width: 281px
 		filter: blur(5px)
+
+	.footer-phone
+		order: 1
+		margin-left: auto
+
+	.footer-box-documents
+		margin-left: auto
+
+	.footer-box-container
+		order: -1
+		margin-right: auto
+
+	.contacts-box
+		padding: 48px
+		h3
+			font-size: 24px
+			font-weight: 900
+
+	.contacts-phone
+		font-size: 24px
+		font-weight: 900
+		margin-top: 24px
+
+	.numbers-box
+		&::before
+			-webkit-transition-duration: 0.6s
+			-o-transition-duration: 0.6s
+			transition-duration: 0.6s
+			-webkit-transition-property: opacity, -webkit-transform
+			transition-property: opacity, -webkit-transform
+			-o-transition-property: transform, opacity
+			transition-property: transform, opacity
+			transition-propety: transform, opacity, -webkit-transform
+			font-size: 208px
+
+		&__title
+			margin-top: 10px
+			transition: opacity 0.3s
+			font-size: 24px
+			font-weight: 900
+		&__text
+			position: absolute
+			bottom: 76px
+			transition-duration: 0.6s
+			transform: translateY(50%)
+			opacity: 0
+		&:hover, &:focus
+			&::before, &::before
+				transform: translate(115%, 50%) scale(2.5)
+				opacity: 0.3
+			.numbers-box__title
+				opacity: 0
+			.numbers-box__text
+				transform: none
+				opacity: 1
+
+	.parallax-item-reviews-one
+		top: 11.22994652% !important
+
+	.parallax-item-reviews-two
+		top: 4.6306505% !important
+		right: 18.26388889%
+
+	.parallax-item-reviews-three
+		top: auto !important
+		right: 1.38888889%
+		bottom: 14.57219251%
+		left: auto !important
+		width: 161px
+		filter: blur(5px)
+
+	.complex-row
+		width: 100%
+		position: relative
+		display: flex
+		margin: 0 0 60px
+		&:last-child
+			margin: 0
+
+	.complex-image
+		position: absolute
+		position: absolute
+		right: 0
+		top: -270px
+		width: 600px
+		height: 610px
+
+	.complex-item
+		position: relative
+		max-width: 443px
+		&::before
+			position: absolute
+			width: 93px
+			height: 180px
+			content: ''
+			transition-duration: 1.8s
+			transition-property: transform, opacity
+			opacity: 0
+			background: url('../img/arrow1.svg') no-repeat center
+			background-size: 100%
+		&:nth-child(1)
+			margin-top: 42px
+			margin-right: 132px
+			justify-self: end
+		&:nth-child(2)
+			&::before
+				bottom: calc(100% + 2.3rem)
+				left: -5.4rem
+				transform: rotate(-100deg) translate(3rem, -5rem)
+		&__image
+			min-width: 293px
+			width: 293px
+			height: 614px
+			display: flex
+			align-items: center
+			justify-content: center
+		&__content
+			padding: 32px
+			width: 100%
+			transition-duration: 0.9s
+			box-sizing: border-box
+			transition-property: transform, opacity
+			transform: translateY(100px)
+			opacity: 0
+			border-radius: 32px
+		&.in-viewport
+			&::before
+				opacity: 1
+				transform: none
+			&:nth-child(2)
+				&::before
+					transform: rotate(-68.42deg)
+
+	.complex-grid
+		display: grid
+		font-size: 0.8em
+		grid-template-columns: auto 1fr
+		grid-template-areas: 'img item1' 'img item2'
+		-webkit-column-gap: 10rem
+		-moz-column-gap: 10rem
+		column-gap: 10rem
+		row-gap: 11rem
+		&::before
+			width: 293px
+			height: 614px
+			background: url('../img/complex__grid-before-l.png') no-repeat center
+			background-size: 100%
+			grid-area: img
+
+	.uniqueness
+		.btn
+			margin: 48px 0 0
+
+	.parallax-item-certificates-one
+		top: 24.69680265% !important
+
+	.parallax-item-certificates-two
+		top: 4.6306505% !important
+		right: 18.26388889%
+
+	.parallax-item-certificates-three
+		top: 28.66593164% !important
+		right: 2.77777778%
+		left: auto !important
+		width: 16.1rem
+		filter: blur(5px)
+
+	.scroll-slider__slide
+		width: 264px
+
+	.scroll-slider__container
+		margin-top: 45px
+		margin-bottom: 45px
+
+	.rounded
+		border-radius: 32px !important
+
+	.audience
+		margin: 110px 0
+
+	.audience-box
+		margin: 0 0 120px
+		&:last-child
+			margin: 0
+		h3
+			font-size: 24px
+
+	.review-box
+		padding: 32px
+		font-size: 16px
+
+	.review-author
+		margin-top: 16px
+
+	.mt-120
+		margin-top: 120px
+
+	.offers-image
+		order: 1
+
+	.h3
+		font-size: 24px
+
+	.tab-content
+		padding: 24px 32px 0
+		.btn
+			margin: 24px 0 0
+			width: 100%
 
 @media screen and (min-width: 1440px)
 	.home::before

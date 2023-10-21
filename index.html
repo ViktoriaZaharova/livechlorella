@@ -13,6 +13,7 @@
 	<!-- add plugins css -->
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="css/blueimp-gallery.min.css" />
 	<!-- add plugins css end -->
 
 	<link rel="stylesheet" href="css/style.css">
@@ -96,23 +97,30 @@
 			</div>
 		</main>
 
-		<section class="why-product page-section">
+		<section class="why-product">
 			<div class="container">
 				<div class="row">
 					<div class="col-12 col-lg-6 order-lg-1">
-					
-						<div class="why-product-slider swiper-wrapper">
-							<div class="swiper-slide">
-								<div class="why-product-slider-item"><img src="img/20_big.png" alt=""></div>
+						<div class="why-product-slider">
+
+							<div class="swiper">
+
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<div class="why-product-slider-item"><img src="img/20_big.png" alt=""></div>
+									</div>
+									<div class="swiper-slide">
+										<div class="why-product-slider-item"><img src="img/21_big.png" alt=""></div>
+									</div>
+									<div class="swiper-slide">
+										<div class="why-product-slider-item"><img src="img/22_big.png" alt=""></div>
+									</div>
+								</div>
+								<div class="swiper-button-prev"></div>
+								<div class="swiper-button-next"></div>
 							</div>
-							<div class="swiper-slide">
-								<div class="why-product-slider-item"><img src="img/21_big.png" alt=""></div>
-							</div>
-							<div class="swiper-slide">
-								<div class="why-product-slider-item"><img src="img/22_big.png" alt=""></div>
-							</div>
+
 						</div>
-						
 					</div>
 					<div class="col-12 col-lg-6">
 						<div class="why-product-content">
@@ -131,20 +139,31 @@
 			</div>
 		</section>
 
-		<section class="why-product page-section">
+		<section class="why-product">
 			<div class="container">
 				<div class="row">
 					<div class="col-12 col-lg-6">
 						<div class="why-product-slider">
-							<div class="slide">
-								<div class="why-product-slider-item"><img src="img/20_big.png" alt=""></div>
+
+							<div class="swiper">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<div class="why-product-slider-item"><img src="img/24_big.png" alt=""></div>
+									</div>
+									<div class="swiper-slide">
+										<div class="why-product-slider-item"><img src="img/25_big.png" alt=""></div>
+									</div>
+									<div class="swiper-slide">
+										<div class="why-product-slider-item"><img src="img/26_big.png" alt=""></div>
+									</div>
+									<div class="swiper-slide">
+										<div class="why-product-slider-item"><img src="img/27_big.png" alt=""></div>
+									</div>
+								</div>
+								<div class="swiper-button-prev"></div>
+								<div class="swiper-button-next"></div>
 							</div>
-							<div class="slide">
-								<div class="why-product-slider-item"><img src="img/21_big.png" alt=""></div>
-							</div>
-							<div class="slide">
-								<div class="why-product-slider-item"><img src="img/22_big.png" alt=""></div>
-							</div>
+
 						</div>
 					</div>
 					<div class="col-12 col-lg-6">
@@ -161,33 +180,625 @@
 									феноменальные результаты укрепления иммунитета человека, что доказано результатами медицинских
 									исследований.</p>
 							</div>
-							<a href="#" class="btn btn-white">подробнее</a>
+							<a href="#details" class="btn btn-white open_modal">подробнее</a>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
 
-		<section class="">
+		<section class="advantages">
 			<div class="container">
 				<div class="row">
+					<div class="col-12">
+						<h2>В это трудно поверить!</h2>
+						<div class="box-text">
+							<p>Но в отличие от привычных витаминов и минералов, БАД или экстрактов из высших растений, живая клетка
+								действует так, что
+								эффект яркого улучшения самочувствия наступает уже с первых дней приема «Живой хлореллы»</p>
+						</div>
+					</div>
+
+					<div class="col-12">
+						<div class="advantages-wrapper">
+							<div class="numbers-box">
+								<div class="numbers-box__title">
+									<h3>Богатейший состав хлореллы</h3>
+								</div>
+								<div class="numbers-box__text">
+									<p>Богатейший состав хлореллы - это натуральный, самодостаточный и сбалансированный комплекс
+										незаменимых БАВ, на порядок
+										превосходящий высшие растения.</p>
+								</div>
+							</div>
+							<div class="numbers-box">
+								<div class="numbers-box__title">
+									<h3>Сохраняет, весь биохимический состава</h3>
+								</div>
+								<div class="numbers-box__text">
+									<p>В живых клетках хлореллы БАВ сохраняются в первозданном состоянии, в отличие сухих клеток, в
+										которых полезные вещества
+										теряются при тепловой обработке и последующем хранении.</p>
+								</div>
+							</div>
+							<div class="numbers-box">
+								<div class="numbers-box__title">
+									<h3>Максимальная усваимость</h3>
+								</div>
+								<div class="numbers-box__text">
+									<p>Максимальная усваимость.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="complex bg-white page-section">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="complex-row">
+							<div class="complex-content">
+								<h2>Комплекс, который необходим каждому!</h2>
+								<div class="box-text">
+									<p>Традиционные препараты, такие как Омега-3, витамины, макро и микроэлементы, аминокислоты и др.
+										необходимы для организма
+										однако ограничены по составу.</p>
+									<p>В Хлорелле нет какого то одного или нескольких действующих веществ, как у традиционных препаратов.
+									</p>
+								</div>
+							</div>
+							<div class="complex-image"><img src="img/complex__row-after-l.png" alt=""></div>
+						</div>
+
+						<div class="complex-grid">
+
+							<div class="complex-item">
+								<div class="complex-item__content">
+									<div class="box-text">
+										<p>Ограниченный состав и низкая усваиваемость обычных препаратов в результате даёт лишь
+											незначительный
+											эффект, никак не
+											влияющий на ваше самочувствие.</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="complex-item complex-item-last">
+								<div class="complex-item__content">
+									<div class="box-text">
+										<p>Живая хлорелла содержит сотни (свыше 650) элементов: незаменимые аминокислоты, витамины,
+											полиненасыщенные жирные
+											кислоты, макро и микроэлементы и др.</p>
+
+										<p>Эти элементы представлены в виде натурального и сбалансированного комплекса, который невозможно
+											воссоздать искусственно.</p>
+									</div>
+
+									<a href="#compound" class="btn btn-white open_modal">Состав напитка</a>
+								</div>
+							</div>
+						</div>
+					</div>
 
 				</div>
 			</div>
 		</section>
 
-		<section class="">
+		<section class="difference">
 			<div class="container">
 				<div class="row">
+					<div class="col-12">
+						<div class="difference-wrapper">
+							<div class="difference-content">
+								<h2>Отличие Живой хлорелы от порошков и таблеток</h2>
+								<div class="box-text">
+									<p>В развитых странах сухую хлореллу в виде таблеток и порошков, получают из почвенных штаммов,
+										открытых еще в 60-ых годах
+										прошлого века.</p>
 
+									<p>Такие штаммы хлореллы распространены в Природе повсюду, клетки у них защищены прочной оболочкой и
+										по
+										этой причине
+										почвенные штаммы трудно усваиваются организмом.</p>
+
+									<p>Кроме того, при изготовлении порошков и таблеток - сушке клеток при температурах свыше 200 градусов
+										и хранения
+										объективно происходят потери состава БАВ.</p>
+									<p>Очевидно, что эффект порошков или таблеток из сухой хлореллы будет принципиально ниже продуктов на
+										основе живых клеток
+										микроводоросли.</p>
+								</div>
+							</div>
+							<div class="difference-image"><img src="img/i201.png" alt=""></div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</section>
 
-		<section class="">
+		<section class="uniqueness page-section">
 			<div class="container">
 				<div class="row">
+					<div class="col-12 col-lg-6">
+						<div class="uniqueness-image"><img src="img/Rectangle83.png" alt=""></div>
+					</div>
+					<div class="col-12 col-lg-6">
+						<div class="uniqueness-content">
+							<h2>Чем же уникален наш штамм?</h2>
+							<div class="box-text">
+								<p>Штамм хлореллы ИФР №С-111 выделенный в 1977 году из Нурекского водохранилища не почвенный, а
+									планктонный.</p>
 
+								<p>Приток водохранилища определяется рекой Вакш, которая берет начало в альпийских областях Памиро-Алая.
+									По этой причине,
+									Нурекское водохранилище питают только снеговые, ледниковые и дождевые источники воды.</p>
+
+								<p>Такие природные условия оказали решающее влияние на культуральные свойства аборигенного штамма
+									хлореллы.</p>
+
+								<p>Наличие тонкой оболочки штамма определяет не только планктонные свойства, но и усвояемость состава
+									БАВ
+									клетки
+									микроводоросли.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="uniqueness pb-110">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-lg-6 order-lg-1">
+						<div class="uniqueness-image"><img src="img/65ebf21bb0387b98b1de9acb2dba162e.jpeg" alt=""></div>
+					</div>
+					<div class="col-12 col-lg-6">
+						<div class="uniqueness-content">
+							<h2>Будьте бдительны!</h2>
+							<div class="box-text">
+								<p>Сегодня в России уже десяток коммерческих проектов, которые бойко предлагают продукты на основе живых
+									клеток Хлореллы
+									для человека.
+									Однако, здесь скрыт не столько плагиат, сколько компрометация идеи по причине, мягко говоря, не
+									соответствия качества
+									продукции.
+									Как автору идеи живой клетки Хлореллы и продуктов Живая хлорелла для человека, хотелось бы подробней
+									остановиться на
+									вопросах качества и особенностей таких продуктов.</p>
+							</div>
+
+							<a href="#details" class="btn btn-white">подробнее</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="certificates parallax js-scroll-slider bg-white page-section">
+			<div class="parallax-container js-parallax">
+				<div data-depth="0.2" class="parallax-item parallax-item-certificates-one"><img src="img/cell-1.png" alt="">
+				</div>
+				<div data-depth="0.2" class="parallax-item parallax-item-certificates-two"><img src="img/cell-2.png" alt="">
+				</div>
+				<div data-depth="0.2" class="parallax-item parallax-item-certificates-three"><img src="img/cell-3.png" alt="">
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<h2>Более 15 лет мы подкрепляем наш результат опытами и научными исследованиями.</h2>
+						<div class="box-text">
+							<p>Все исследования воздействия живой клетки хлореллы на человека, проводимые с 2004 года, относятся к
+								продуктам полученным
+								только с нашим участием и относятся только к планктонному штамму хлореллы ИФР №С-111.</p>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="swiper-container scroll-slider__container js-scroll-slider__container">
+				<div class="swiper-wrapper js-scroll-slider__lightbox" id="blueimp-gallery">
+					<div class="swiper-slide scroll-slider__slide">
+						<a href="img/92_big.jpeg" class="scroll-slider__lightbox">
+							<img src="img/92_prev.jpeg" alt="certificate" class="img">
+						</a>
+					</div>
+					<div class="swiper-slide scroll-slider__slide">
+						<a href="img/93_big.jpeg" class="scroll-slider__lightbox">
+							<img src="img/93_prev.jpeg" alt="certificate" class="img">
+						</a>
+					</div>
+					<div class="swiper-slide scroll-slider__slide">
+						<a href="img/94_big.jpeg" class="scroll-slider__lightbox">
+							<img src="img/94_prev.jpeg" alt="certificate" class="img">
+						</a>
+					</div>
+					<div class="swiper-slide scroll-slider__slide">
+						<a href="img/95_big.jpeg" class="scroll-slider__lightbox">
+							<img src="img/95_prev.jpeg" alt="certificate" class="img">
+						</a>
+					</div>
+					<div class="swiper-slide scroll-slider__slide">
+						<a href="img/96_big.jpeg" class="scroll-slider__lightbox">
+							<img src="img/96_prev.jpeg" alt="certificate" class="img">
+						</a>
+					</div>
+					<div class="swiper-slide scroll-slider__slide">
+						<a href="img/97_big.jpeg" class="scroll-slider__lightbox">
+							<img src="img/97_prev.jpeg" alt="certificate" class="img">
+						</a>
+					</div>
+					<div class="swiper-slide scroll-slider__slide">
+						<a href="img/98_big.jpeg" class="scroll-slider__lightbox">
+							<img src="img/98_prev.jpeg" alt="certificate" class="img">
+						</a>
+					</div>
+					<div class="swiper-slide scroll-slider__slide">
+						<a href="img/99_big.jpeg" class="scroll-slider__lightbox">
+							<img src="img/99_prev.jpeg" alt="certificate" class="img">
+						</a>
+					</div>
+					<div class="swiper-slide scroll-slider__slide">
+						<a href="img/100_big.jpeg" class="scroll-slider__lightbox">
+							<img src="img/100_prev.jpeg" alt="certificate" class="img">
+						</a>
+					</div>
+					<div class="swiper-slide scroll-slider__slide">
+						<a href="img/101_big.jpeg" class="scroll-slider__lightbox">
+							<img src="img/101_prev.jpeg" alt="certificate" class="img">
+						</a>
+					</div>
+					<div class="swiper-slide scroll-slider__slide">
+						<a href="img/102_big.jpeg" class="scroll-slider__lightbox">
+							<img src="img/102_prev.jpeg" alt="certificate" class="img">
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="scroll-slider__scrollbar">
+							<div class="swiper-scrollbar scroll-slider__scroll js-scroll-slider__scroll"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<section class="page__section video-section">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="rounded rounded-video js-videoWrapper">
+							<button class="rounded-poster js-videoPoster"></button>
+							<iframe src="" data-path="https://www.youtube.com/embed/aWh5qgtwmHg?autoplay=1" frameborder="0"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+								allowfullscreen="allowfullscreen" allowtransparency="true"
+								class="rounded-iframe js-videoIframe"></iframe>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<section class="audience">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<h2>Напиток органично сочетается и подходит:</h2>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-12 col-lg-6">
+						<div class="audience-box">
+							<h3>Для тех, кто занимается спортом </h3>
+							<div class="audience-box__body">
+								<ul class="my-ul">
+									<li>Для восстановления после травм и физических нагрузок.&nbsp;</li>
+									<li>Ускоряет вывод из организма интоксикации, молочной и мочевой кислот, образующихся при физических
+										нагрузках.&nbsp;</li>
+								</ul>
+							</div>
+							<div class="review-box">
+								<div class="review-box__content">
+									<div class="box-text">
+										<p>«Такое ощущение, что тело стало легче, воздушнее и бодрость не покидает на протяжении полного
+											дня»</p>
+									</div>
+								</div>
+								<div class="review-author">
+									<div class="review-author__avatar">
+										<img src="img/4_big_0.png" alt="Алексей Талалаев">
+									</div>
+									<div class="review-author__body">
+										<div class="review-author__name">
+											Алексей Талалаев </div>
+										<div class="review-author__description">
+											тренер по йоге </div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="audience-box">
+							<h3>При наличии простудных болезней</h3>
+							<div class="audience-box__body">
+								<ul class="my-ul">
+									<li>Нормализуется уровень сахара в крови и холестерина.&nbsp;</li>
+									<li>Профилактика и лечение острой алкогольной и наркотической интоксикации&nbsp;</li>
+									<li>Ускоряет восстановление после химиотерапии.&nbsp;</li>
+									<li>Улучшение самочувствия при хронических болезнях.&nbsp;</li>
+								</ul>
+							</div>
+							<div class="review-box">
+								<div class="review-box__content">
+									<div class="box-text">
+										<p>«Помогла в лечении псориаза, улучшилось самочувствие. Буду продолжать пить курсом т.к количество
+											псориаза на
+											руках и ногах уменьшилось»</p>
+									</div>
+								</div>
+								<div class="review-author">
+									<div class="review-author__avatar">
+										<img src="img/7_big_0.png" alt="Василий Андрианов">
+									</div>
+									<div class="review-author__body">
+										<div class="review-author__name">
+											Василий Андрианов</div>
+										<div class="review-author__description">
+											прошел курс лечения</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="audience-box">
+							<h3>При неблагоприятных условиях жизни</h3>
+							<div class="audience-box__body">
+								<ul class="my-ul">
+									<li>Компенсация нездорового питания и влияния окружающей среды.&nbsp;</li>
+									<li>Защита организма во время работы на вредных производствах.&nbsp;</li>
+								</ul>
+							</div>
+							<div class="review-box">
+								<div class="review-box__content">
+									<div class="box-text">
+										<p>«При работе на сталелитейном завод часто испытывал головные боли и слабость в суставах. После
+											прохождения курса
+											лечения этим напитком стал ощущать легкость и уменьшились боли в суставах»</p>
+									</div>
+								</div>
+								<div class="review-author">
+									<div class="review-author__avatar">
+										<img src="img/8_big_0.png" alt="Дмитрий Бастрыкин">
+									</div>
+									<div class="review-author__body">
+										<div class="review-author__name">
+											Дмитрий Бастрыкин</div>
+										<div class="review-author__description">
+											инженер-конструктор</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-lg-6">
+						<div class="audience-box mt-120">
+							<h3>Вместе со здоровым питанием</h3>
+							<div class="audience-box__body">
+								<ul class="my-ul">
+									<li>Восполнение недостатка белка и аминокислот.&nbsp;</li>
+									<li>Улучшение усвоения питательных веществ из растительных продуктов.&nbsp;</li>
+									<li>Сбалансирование рациона витаминами и микро-макроэлементами.&nbsp;</li>
+								</ul>
+							</div>
+							<div class="review-box">
+								<div class="review-box__content">
+									<div class="box-text">
+										<p>«При переходе на питание растительными продуктами живая хлорелла помогла восполнить нужное
+											количество белка и
+											аминокислот, которые встречаются в мясе»</p>
+									</div>
+								</div>
+								<div class="review-author">
+									<div class="review-author__avatar">
+										<img src="img/6_big_0.png" alt="Марина Богомолова">
+									</div>
+									<div class="review-author__body">
+										<div class="review-author__name">
+											Марина Богомолова</div>
+										<div class="review-author__description">
+											похудела на 88 кг за 1,5 года</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="audience-box">
+							<h3>Во время учебы или офисной работы</h3>
+							<div class="audience-box__body">
+								<ul class="my-ul">
+									<li>Увеличение ежедневных ресурсов организма.</li>
+									<li>Укрепление общего иммунитета.</li>
+									<li>Выведение токсинов и тяжелых металлов.</li>
+									<li>Нормализация обмена веществ и баланса массы тела.</li>
+									<li>Уменьшение риска развития кариеса.</li>
+									<li>Компенсация последствий стресса.</li>
+									<li>Улучшение памяти.</li>
+									<li>Продление молодости организма.</li>
+								</ul>
+							</div>
+							<div class="review-box">
+								<div class="review-box__content">
+									<div class="box-text">
+										<p>«Отметил для себя увеличение работоспособности и при этом стал лучше высыпаться за меньшее
+											количество времени»</p>
+									</div>
+								</div>
+								<div class="review-author">
+									<div class="review-author__avatar">
+										<img src="img/9_big_0.png" alt="Роман Тодоренко">
+									</div>
+									<div class="review-author__body">
+										<div class="review-author__name">
+											Роман Тодоренко</div>
+										<div class="review-author__description">
+											программист</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="offers parallax page-section bg-white">
+			<div class="parallax-container js-parallax">
+				<div data-depth="0.2" class="parallax-item parallax-item-offers-one"><img src="img/cell-1.png" alt=""></div>
+				<div data-depth="0.2" class="parallax-item parallax-item-offers-two"><img src="img/cell-2.png" alt=""></div>
+				<div data-depth="0.2" class="parallax-item parallax-item-offers-three"><img src="img/cell-3.png" alt=""></div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<h2>Действует комплексно</h2>
+					</div>
+
+					<div class="col-12">
+						<div class="offer-swiper">
+							<!-- Additional required wrapper -->
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="offers-wrapper">
+										<div class="offers-image">
+											<img src="img/23_mid.png" alt="«Живая хлорелла» концентрат" class="img offers__img">
+										</div>
+										<div class="offers-item">
+											<div class="offers-item__head">
+												<h3 class="h3">Напиток «Живая Хлорелла»</h3>
+											</div>
+											<div class="offers-item__body">
+												<div class='tabs-wrap'>
+													<ul class="tabs my-ul">
+														<li class="active"><a href="#tab1">
+																<span>12 недель — 590 ₽/
+																	бутылка</span>
+															</a></li>
+														<li><a href="#tab2">4 недели — 590 ₽/
+																бутылка</a></li>
+														<li><a href="#tab3">2 недели — 590 ₽/
+																бутылка</a></li>
+													</ul>
+													<div class="tab-container">
+														<div id="tab1" class="tab-content active">
+															<div class="price-product">
+																<div class="price">4740 ₽</div>
+															</div>
+															<div class="dosage">
+																<p>12 бутылок на 12 недель приема</p>
+															</div>
+															<a href="#basket" class="btn btn-accent add-basket">
+																Добавить в корзину </a>
+														</div>
+														<div id="tab2" class="tab-content">
+															<div class="price-product">
+																<div class="price">1980 ₽</div>
+															</div>
+															<div class="dosage">
+																<p>4 бутылки на 4 недели приема</p>
+															</div>
+															<a href="#basket" class="btn btn-accent add-basket">
+																Добавить в корзину </a>
+														</div>
+														<div id="tab3" class="tab-content">
+															<div class="price-product">
+																<div class="price">1180 ₽</div>
+															</div>
+															<div class="dosage">
+																<p>2 бутылки на 2 недели приема</p>
+															</div>
+															<a href="#basket" class="btn btn-accent add-basket">
+																Добавить в корзину </a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">Slide 2</div>
+							</div>
+							<!-- If we need pagination -->
+							<div class="swiper-pagination"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="offers__slider-wrapper">
+
+				<div class="swiper-container shadow-compensator offers__slider js-offers">
+					<div class="swiper-wrapper">
+						<div class="container swiper-slide offers__row">
+
+						</div>
+					</div>
+				</div>
+				<div class="swiper-pagination"></div>
+			</div>
+		</section>
+
+
+		<section class="video-reviews parallax">
+			<div class="parallax-container js-parallax">
+				<div data-depth="0.2" class="parallax-item parallax-item-reviews-one"><img src="img/cell-1.png" alt=""></div>
+				<div data-depth="0.2" class="parallax-item parallax-item-reviews-two"><img src="img/cell-2.png" alt=""></div>
+				<div data-depth="0.2" class="parallax-item parallax-item-reviews-three"><img src="img/cell-3.png" alt=""></div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<h2>Видео отзывы о эффекте «Живой хлореллы»</h2>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<section class="contacts" id="community">
+			<div class="map">
+				<iframe
+					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d837.0705250967117!2d45.22620413606894!3d53.60072377025498!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4141694477a78463%3A0x7e3c1f324d0271e2!2z0J7QntCeIMKr0JTQtdC70L7Cuw!5e0!3m2!1sru!2sru!4v1614606929133!5m2!1sru!2sru"
+					width="100%" height="100%" allowfullscreen="allowfullscreen" loading="lazy" style="border: 0px;"></iframe>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="contacts-box">
+							<h2>ООО «ДЕЛО»</h2>
+							<div class="contacts-box__item">
+								<h3>Факт. адрес:</h3>
+								<div class="box-text">
+									<p>442730, Пензенская область, р.п. Лунино, ул.&nbsp;Производственная, 60</p>
+								</div>
+							</div>
+							<div class="contacts-box__item">
+								<h3>Юр. адрес:</h3>
+								<div class="box-text">
+									<p>442730, Пензенская область, Лунинский р-н, р.п. Лунино, ул. Саратовская, 30</p>
+								</div>
+								<a href="tel:+79631115311" class="contacts-phone">+7 (963) 111-53-11</a>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -195,7 +806,28 @@
 		<footer>
 			<div class="container">
 				<div class="row">
+					<div class="col-12 d-flex flex-wrap align-items-center">
+						<a href="tel:+79631115311" class="footer-phone">+7 (963) 111-53-11</a>
+						<div class="footer-box">
+							<p>ИНН: 5821901540</p>
+							<p>ОГРН: 1145809000215</p>
+						</div>
+						<div class="footer-box footer-box-documents">
+							<a href="#politics" class="footer-box__link open_modal">Политика обработки персональных данных</a>
+							<a href="https://onlinebees.ru/" target="_blank" class="footer-box__link link-author">Сделано в
+								<span>ONLINEBEES</span></a>
+						</div>
 
+						<div class="footer-box footer-box-container">
+							<div class="copyright">
+								<p>© 2023 ООО «Дело»</p>
+								<p>Производство «Живой хлореллы»</p>
+							</div>
+							<div class="footer-description">
+								<p>БАД, не является лекарственным средством</p>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</footer>
@@ -206,6 +838,7 @@
 	<script src="js/bootstrap.bundle.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+	<script src="js/blueimp-gallery.min.js"></script>
 	<!-- add plugins js end-->
 
 	<script src="js/common.js"></script>

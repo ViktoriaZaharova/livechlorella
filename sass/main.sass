@@ -34,15 +34,421 @@
 		img
 			transform: rotate(120deg)
 
-
 .why-product
+	margin: 110px 0
 	h2
 		max-width: 500px
 
 .why-product-slider
-	padding: 0 64px
+	display: flex
+	align-items: center
+
+.why-product-content
+	.btn
+		margin: 48px 0 0
 
 .why-product-slider-item
-	max-width: 447px
-	margin: 0 auto  
-	@include d-flex			
+	// max-width: 447px
+	padding: 0 56px
+	margin: 0 auto
+	@include d-flex
+
+// advantages
+.advantages
+	margin: 0 0 110px
+
+.advantages-wrapper
+	margin: 60px 0 0
+	display: flex
+
+.numbers-box
+	position: relative
+	overflow: hidden
+	counter-increment: numbers
+	&::before
+		display: block
+		content: counter(numbers)
+		font-weight: 900
+		line-height: 0.8
+	&:first-child
+		border: 0.1rem solid #FAFAFA
+
+// complex
+.complex
+	h2
+		font-size: 30px
+
+.complex-content
+	max-width: 576px
+	.box-text
+		p
+			margin: 0
+
+.complex-item
+	.btn
+		margin: 22px 0 0
+		padding: 16px
+		min-width: 245px
+	.box-text
+		font-size: 16px
+	&__content
+		box-shadow: 0px 20px 20px rgba(50, 50, 71, 0.1), 0px 32px 40px rgba(50, 50, 71, 0.1)
+
+	&:nth-child(1)
+		&::before
+			bottom: calc(100% - 6rem)
+			left: calc(100% + 2.3rem)
+			transform: rotate(-21deg) translate(1.7rem, -4rem)
+	&-last
+		.complex-item__content
+			color: #fafafa
+			background: $accent
+	&.in-viewport
+		.complex-item__content
+			opacity: 1
+			transform: none
+
+.complex-grid
+	&::before
+		content: ''
+		display: block
+
+// difference
+.difference
+	position: relative
+	z-index: 1
+	&::before
+		content: ''
+		position: absolute
+		left: 0
+		top: 0
+		width: 100%
+		height: 50%
+		background: #FAFAFA
+		z-index: -1
+	&-wrapper
+		display: flex
+		align-items: stretch
+		box-shadow: 0px 20px 20px rgba(50, 50, 71, 0.1), 0px 32px 40px rgba(50, 50, 71, 0.1)
+		background: $accent
+		border-radius: 32px
+		overflow: hidden
+	&-content
+		width: 52%
+		padding: 48px
+
+	&-image
+		width: 48%
+		@include d-flex
+		img
+			width: 100%
+			height: 100%
+			object-fit: cover
+
+// certificates
+.parallax-item-certificates-one
+	left: -8.8rem !important
+	width: 17.6rem
+	filter: blur(6px)
+
+.parallax-item-certificates-two
+	left: auto !important
+	width: 8.3rem
+
+.scroll-slider__lightbox
+	display: block
+
+.swiper-scrollbar
+	border-radius: 10px
+	position: relative
+	background: rgba(0,0,0,.1)
+
+.scroll-slider__slide
+	box-shadow: 0px 8px 8px rgba(50, 50, 71, 0.08), 0px 8px 16px rgba(50, 50, 71, 0.06)
+
+.img
+	display: block
+	max-width: 100%
+	margin-right: auto
+	margin-left: auto
+
+.scroll-slider__container
+	padding-top: 15px
+	padding-bottom: 15px
+
+.scroll-slider__scrollbar
+	position: relative
+	box-sizing: border-box
+	height: 16px
+	padding: 2px
+	border-radius: 8px
+	background-color: #CFD4D1
+	box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.25)
+
+.scroll-slider__scroll, .swiper-horizontal>.swiper-scrollbar, .swiper-scrollbar.swiper-scrollbar-horizontal
+	width: 100%
+	height: 100%
+	top: 0
+	left: 0
+	bottom: 0
+	background: transparent
+	position: relative
+
+.scroll-slider__drag
+	height: 100%
+	cursor: pointer
+	border-radius: 6px
+	background-color: #207C3F
+
+// video-section
+.video-section
+
+.rounded
+	overflow: hidden
+	background-color: #207C3F
+	-webkit-box-shadow: 0px 20px 20px rgba(50, 50, 71, 0.1), 0px 32px 40px rgba(50, 50, 71, 0.1)
+	box-shadow: 0px 20px 20px rgba(50, 50, 71, 0.1), 0px 32px 40px rgba(50, 50, 71, 0.1)
+
+.rounded-video
+	position: relative
+	width: 100%
+	height: 0
+	background-color: #000
+	padding-top: 56.25%
+
+.rounded-poster
+	position: absolute
+	top: 0
+	right: 0
+	left: 0
+	width: 100%
+	height: 100%
+	bottom: 0
+	margin: 0
+	padding: 0
+	border: 0
+	cursor: pointer
+	outline: none
+	background-position: 50% 50%
+	background-size: cover
+	text-indent: -999em
+	overflow: hidden
+	opacity: 1
+	z-index: 1
+	background: linear-gradient(180deg, rgba(19, 73, 37, 0) 50%, #134925 100%), url("../img/poster.jpg")
+	border-radius: 30px
+	transition: opacity 800ms, height 0s
+	transition-delay: 0s, 0s
+
+	&:before
+		content: ''
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+		width: 80px
+		height: 80px
+		background-color: #FAFAFA
+		border-radius: 100%
+		transition: background-color 300ms
+
+	&:after
+		content: ''
+		position: absolute
+		top: 50%
+		left: 50%
+		width: 0
+		height: 0
+		margin: -15px 0 0 -10px
+		border-top: 15px solid transparent
+		border-left: 30px solid #207C3F
+		border-bottom: 15px solid transparent
+		transition: border-color 300ms
+
+.rounded-poster:hover:before,
+.rounded-poster:focus:before
+	background-color: rgba(255, 255, 255, 0.5)
+
+.rounded-poster:hover:after,
+.rounded-poster:focus:after
+	border-left-color: #1B6132
+
+.is-active .rounded-poster
+	opacity: 0
+	height: 0
+	width: 0
+	transition-delay: 0s, 800ms
+
+.rounded-iframe
+	position: absolute
+	top: 0
+	right: 0
+	bottom: 0
+	left: 0
+	width: 100%
+	height: 100%
+	background-color: transparent
+
+// audience
+.audience-box
+	font-size: 20px
+	h3
+		margin: 0 0 16px
+		font-weight: 900
+	&__body
+		ul
+			padding: 0 0 0 30px
+			list-style-type: "— "
+			li
+				margin: 0 0 15px
+				&:last-child
+					margin: 0
+
+.review-box
+	margin-top: 24px
+	width: 100%
+	color: #47554C
+	border-radius: 32px
+	background-color: #FAFAFA
+	box-shadow: 0px 20px 20px rgba(50, 50, 71, 0.1), 0px 32px 40px rgba(50, 50, 71, 0.1)
+	.box-text
+		font-size: 16px
+		font-style: italic
+		color: #47554C
+
+.review-author
+	width: 100%
+	display: flex
+	align-items: center
+	&__avatar
+		@include d-flex
+		width: 48px
+		height: 48px
+		border-radius: 50%
+		overflow: hidden
+	&__body
+		padding: 0 0 0 10px
+		width: calc(100% - 48px)
+	&__name
+		font-weight: bold
+	&__description
+		color: #838C86
+
+// offers
+.parallax-item-offers-one
+	top: auto !important
+	bottom: 14.7rem
+	left: -10rem !important
+	-webkit-filter: blur(6px)
+	filter: blur(6px)
+
+.parallax-item-offers-two
+	top: auto !important
+	right: 6rem
+	bottom: 4.8rem
+	left: auto !important
+
+.parallax-item-offers-three
+	top: 5.3rem !important
+	right: -4rem
+	left: auto !important
+	-webkit-filter: blur(5px)
+	filter: blur(5px)
+
+.offers-wrapper
+	width: 100%
+	display: flex
+	align-items: center
+	justify-content: center
+
+.offers-image
+	max-width: 456px
+	width: 100%
+	@include d-flex	
+
+.offers-item
+	padding: 32px 0
+	margin: 0 24px 0 0
+	max-width: 456px
+	width: 100%
+	border: 0.1rem solid #CFD4D1
+	border-radius: 32px
+	background-color: #FAFAFA	
+	&__head
+		padding: 0 32px
+		margin: 0 0 24px
+	h3
+		color: $accent
+		font-weight: 900	
+
+.offer-swiper
+	.swiper-slide
+		margin: 0 auto
+
+.price-product
+	display: flex
+	align-items: center
+	flex-wrap: wrap		
+	font-size: 36px
+
+.price
+	color: $accent
+	font-weight: 900
+	margin-right: 12px
+
+.dosage
+	font-size: 20px
+	margin: 16px 0 0	
+
+// video-reviews
+.video-reviews
+	padding: 110px 0
+	color: #47554C
+	background-color: #FAFAFA
+	h2
+		color: $accent
+
+.parallax-item-reviews-one
+	left: -140rem !important
+	width: 176px
+	filter: blur(6px)
+
+.parallax-item-reviews-two
+	left: auto !important
+	width: 83px
+
+// contacts
+.contacts
+	position: relative
+	z-index: 1
+	.container
+		position: initial
+
+.map
+	position: absolute
+	width: 100%
+	height: 100%
+	iframe
+		width: 100%
+		height: 100%
+
+.contacts-box
+	position: relative
+	z-index: 1
+	margin: 116px 0
+	border-radius: 30px
+	background-image: url('../img/page-bg.jpg')
+	max-width: 576px
+	width: 100%
+	&__item
+		margin: 0 0 24px
+		&:last-child
+			margin: 0
+
+	.box-text
+		font-size: 20px
+
+.contacts-phone
+	color: #fff
+	&:hover
+		color: #fff
