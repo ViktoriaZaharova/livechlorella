@@ -240,6 +240,10 @@
           box-shadow: 0px 8px 8px rgba(50, 50, 71, 0.08), 0px 8px 16px rgba(50, 50, 71, 0.06);
 }
 
+.scroll-slider__slide_overlay {
+  position: relative;
+}
+
 .img {
   display: block;
   max-width: 100%;
@@ -279,6 +283,17 @@
   cursor: pointer;
   border-radius: 6px;
   background-color: #207C3F;
+}
+
+.scroll-slider__link {
+  position: absolute;
+  overflow: hidden;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 0.1rem solid #CFD4D1;
+  border-radius: 50%;
+  -webkit-filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.25));
 }
 
 .rounded {
@@ -501,7 +516,7 @@
 
 .offers-item {
   padding: 32px 0;
-  margin: 0 24px 0 0;
+  margin: 0 40px 0 0;
   max-width: 456px;
   width: 100%;
   border: 0.1rem solid #CFD4D1;
@@ -544,6 +559,37 @@
   margin: 16px 0 0;
 }
 
+.instructions-box__icon {
+  margin: 0 0 24px;
+}
+.instructions-box .h3 {
+  font-weight: bold;
+}
+
+.contraindications-box {
+  font-size: 20px;
+  line-height: 1.5;
+}
+.contraindications-box__number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+}
+
+.attention-text {
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+}
+
 .video-reviews {
   padding: 110px 0;
   color: #47554C;
@@ -563,6 +609,14 @@
 .parallax-item-reviews-two {
   left: auto !important;
   width: 83px;
+}
+
+.scroll-slider__name {
+  position: absolute;
+  pointer-events: none;
+  color: #FAFAFA;
+  font-weight: 700;
+  font-size: 20px;
 }
 
 .contacts {

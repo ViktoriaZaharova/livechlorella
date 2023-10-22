@@ -166,6 +166,9 @@
 .scroll-slider__slide
 	box-shadow: 0px 8px 8px rgba(50, 50, 71, 0.08), 0px 8px 16px rgba(50, 50, 71, 0.06)
 
+.scroll-slider__slide_overlay
+	position: relative
+
 .img
 	display: block
 	max-width: 100%
@@ -199,6 +202,14 @@
 	cursor: pointer
 	border-radius: 6px
 	background-color: #207C3F
+
+.scroll-slider__link
+	position: absolute
+	overflow: hidden
+	box-sizing: border-box
+	border: 0.1rem solid #CFD4D1
+	border-radius: 50%
+	filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.25))
 
 // video-section
 .video-section
@@ -364,22 +375,22 @@
 .offers-image
 	max-width: 456px
 	width: 100%
-	@include d-flex	
+	@include d-flex
 
 .offers-item
 	padding: 32px 0
-	margin: 0 24px 0 0
+	margin: 0 40px 0 0
 	max-width: 456px
 	width: 100%
 	border: 0.1rem solid #CFD4D1
 	border-radius: 32px
-	background-color: #FAFAFA	
+	background-color: #FAFAFA
 	&__head
 		padding: 0 32px
 		margin: 0 0 24px
 	h3
 		color: $accent
-		font-weight: 900	
+		font-weight: 900
 
 .offer-swiper
 	.swiper-slide
@@ -388,7 +399,7 @@
 .price-product
 	display: flex
 	align-items: center
-	flex-wrap: wrap		
+	flex-wrap: wrap
 	font-size: 36px
 
 .price
@@ -398,7 +409,28 @@
 
 .dosage
 	font-size: 20px
-	margin: 16px 0 0	
+	margin: 16px 0 0
+
+// instructions
+.instructions-box
+	&__icon
+		margin: 0 0 24px
+	.h3
+		font-weight: bold
+
+// contraindications
+.contraindications-box
+	font-size: 20px
+	line-height: 1.5
+	&__number
+		@include d-flex
+		border-radius: 50%
+
+.attention-text
+	text-transform: uppercase
+	letter-spacing: 0.03em
+	text-transform: uppercase
+	color: rgba(255, 255, 255, 0.5)
 
 // video-reviews
 .video-reviews
@@ -416,6 +448,13 @@
 .parallax-item-reviews-two
 	left: auto !important
 	width: 83px
+
+.scroll-slider__name
+	position: absolute
+	pointer-events: none
+	color: #FAFAFA
+	font-weight: 700
+	font-size: 20px
 
 // contacts
 .contacts

@@ -402,7 +402,7 @@
 			</div>
 
 			<div class="swiper-container scroll-slider__container js-scroll-slider__container">
-				<div class="swiper-wrapper js-scroll-slider__lightbox" id="blueimp-gallery">
+				<div class="swiper-wrapper js-scroll-slider__lightbox">
 					<div class="swiper-slide scroll-slider__slide">
 						<a href="img/92_big.jpeg" class="scroll-slider__lightbox">
 							<img src="img/92_prev.jpeg" alt="certificate" class="img">
@@ -687,19 +687,21 @@
 												<h3 class="h3">Напиток «Живая Хлорелла»</h3>
 											</div>
 											<div class="offers-item__body">
-												<div class='tabs-wrap'>
-													<ul class="tabs my-ul">
-														<li class="active"><a href="#tab1">
-																<span>12 недель — 590 ₽/
-																	бутылка</span>
-															</a></li>
-														<li><a href="#tab2">4 недели — 590 ₽/
-																бутылка</a></li>
-														<li><a href="#tab3">2 недели — 590 ₽/
-																бутылка</a></li>
+												<div class="tabs">
+
+													<!--  Контейнер с вкладками   -->
+													<ul class="tab-header my-ul">
+														<li class="tab-header__item js-tab-trigger active" data-tab="1"><span>12 недель — 590 ₽/
+																бутылка</span></li>
+														<li class="tab-header__item js-tab-trigger" data-tab="2"><span>4 недели — 590 ₽/
+																бутылка</span></li>
+														<li class="tab-header__item js-tab-trigger" data-tab="3"><span>2 недели — 590 ₽/
+																бутылка</span></li>
 													</ul>
-													<div class="tab-container">
-														<div id="tab1" class="tab-content active">
+
+													<!--  Контейнер с блоками, которые содержат контент вкладок   -->
+													<ul class="tab-content my-ul">
+														<li class="tab-content__item js-tab-content active" data-tab="1">
 															<div class="price-product">
 																<div class="price">4740 ₽</div>
 															</div>
@@ -708,8 +710,8 @@
 															</div>
 															<a href="#basket" class="btn btn-accent add-basket">
 																Добавить в корзину </a>
-														</div>
-														<div id="tab2" class="tab-content">
+														</li>
+														<li class="tab-content__item js-tab-content" data-tab="2">
 															<div class="price-product">
 																<div class="price">1980 ₽</div>
 															</div>
@@ -718,8 +720,8 @@
 															</div>
 															<a href="#basket" class="btn btn-accent add-basket">
 																Добавить в корзину </a>
-														</div>
-														<div id="tab3" class="tab-content">
+														</li>
+														<li class="tab-content__item js-tab-content" data-tab="3">
 															<div class="price-product">
 																<div class="price">1180 ₽</div>
 															</div>
@@ -728,14 +730,13 @@
 															</div>
 															<a href="#basket" class="btn btn-accent add-basket">
 																Добавить в корзину </a>
-														</div>
-													</div>
+														</li>
+													</ul>
 												</div>
 											</div>
 										</div>
 									</div>
 								</div>
-								<div class="swiper-slide">Slide 2</div>
 							</div>
 							<!-- If we need pagination -->
 							<div class="swiper-pagination"></div>
@@ -756,8 +757,108 @@
 			</div>
 		</section>
 
+		<section class="page-section instructions">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<h2>Как употреблять напиток и концентрат «Живая хлорелла»:</h2>
+						<div class="box-text">
+							<p>Для взрослых весом 70 кг рекомендуется употреблять напиток Живая хлорелла по 200 мл, концентрат Живая
+								хлорелла по 3 ст.
+								ложки утром натощак или в течение дня.</p>
+						</div>
+					</div>
+				</div>
 
-		<section class="video-reviews parallax">
+				<div class="row">
+					<div class="col-12 col-lg-6 col-xl-4">
+						<div class="instructions-box">
+							<div class="instructions-box__icon"><img src="img/instruction1.svg" alt=""></div>
+							<div class="instructions-box__body">
+								<h3 class="h3">Перед применением взболтать!</h3>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-lg-6 col-xl-4">
+						<div class="instructions-box">
+							<div class="instructions-box__icon"><img src="img/instruction2.svg" alt=""></div>
+							<div class="instructions-box__body">
+								<h3 class="h3">Возможен как постоянный прием, так и 30 дневными курсами с 2-х недельным перерывом.</h3>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-lg-6 col-xl-4">
+						<div class="instructions-box">
+							<div class="instructions-box__icon"><img src="img/instruction3.svg" alt=""></div>
+							<div class="instructions-box__body">
+								<h3 class="h3">Подходит для взрослых и детей.</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="contraindications">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<h2>Противопоказания для приёма хлореллы:</h2>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-12 col-lg-6 col-xl-3">
+						<div class="contraindications-box">
+							<div class="contraindications-box__number">1</div>
+							<div class="contraindications-box__body">
+								<div class="box-text">
+									<p>Аутоимунные паталогии: рассеянный склероз, красная волчанка</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-lg-6 col-xl-3">
+						<div class="contraindications-box">
+							<div class="contraindications-box__number">2</div>
+							<div class="contraindications-box__body">
+								<div class="box-text">
+									<p>Хронические болезни почек и фенилкетонурия</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-lg-6 col-xl-3">
+						<div class="contraindications-box">
+							<div class="contraindications-box__number">3</div>
+							<div class="contraindications-box__body">
+								<div class="box-text">
+									<p>Беременность и грудное вскармливание</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-lg-6 col-xl-3">
+						<div class="contraindications-box">
+							<div class="contraindications-box__number">4</div>
+							<div class="contraindications-box__body">
+								<div class="box-text">
+									<p>Непереносимость продукта</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-12">
+						<div class="attention-text">
+							<h3>НАПИТОК ЖИВАЯ ХЛОРЕЛЛА НЕ ЯВЛЯЕТСЯ ЛЕКАРСТВОМ ИЛИ БАД И НЕ ВЫЗЫВАЕТ ПРИВЫКАНИЯ</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="video-reviews parallax js-scroll-slider">
 			<div class="parallax-container js-parallax">
 				<div data-depth="0.2" class="parallax-item parallax-item-reviews-one"><img src="img/cell-1.png" alt=""></div>
 				<div data-depth="0.2" class="parallax-item parallax-item-reviews-two"><img src="img/cell-2.png" alt=""></div>
@@ -767,6 +868,74 @@
 				<div class="row">
 					<div class="col-12">
 						<h2>Видео отзывы о эффекте «Живой хлореллы»</h2>
+					</div>
+				</div>
+			</div>
+
+			<div class="swiper-container scroll-slider__container js-scroll-slider__container">
+				<div class="swiper-wrapper js-scroll-slider__lightbox">
+					<div class="swiper-slide scroll-slider__slide scroll-slider__slide_overlay">
+						<a data-type="text/html" data-youtube="ZoAyGwp1UsE" href="https://www.youtube.com/watch?v=ZoAyGwp1UsE"
+							class="scroll-slider__lightbox">
+							<img src="img/4_big_1.png" alt="Алексей Талалаев" class="img scroll-slider__thumb"></a>
+						<a href="https://www.instagram.com/aleks_jai/" target="_blank"
+							class="scroll-slider__link js-scroll-slider__link">
+							<img src="img/4_big_0.png" alt="Алексей Талалаев" class="img">
+						</a>
+						<span class="scroll-slider__name">
+							Алексей Талалаев </span>
+					</div>
+					<div class="swiper-slide scroll-slider__slide scroll-slider__slide_overlay">
+						<a data-type="text/html" data-youtube="osenEDHagTw"
+							href="https://www.youtube.com/watch?v=osenEDHagTw&amp;feature=emb_logo" class="scroll-slider__lightbox">
+							<img src="img/6_big_1.png" alt="Марина Богомолова" class="img scroll-slider__thumb">
+						</a>
+						<a href="https://www.instagram.com/bogomolova8855/" target="_blank"
+							class="scroll-slider__link js-scroll-slider__link">
+							<img src="img/6_big_0.png" alt="Марина Богомолова" class="img">
+						</a>
+						<span class="scroll-slider__name">
+							Марина Богомолова </span>
+					</div>
+					<div class="swiper-slide scroll-slider__slide scroll-slider__slide_overlay">
+						<a data-type="text/html" data-youtube="" href="https://www.youtube.com/" class="scroll-slider__lightbox">
+							<img src="img/7_big_1.png" alt="Василий Андрианов" class="img scroll-slider__thumb">
+						</a>
+						<a href="https://www.instagram.com/" target="_blank" class="scroll-slider__link js-scroll-slider__link">
+							<img src="img/7_big_0.png" alt="Василий Андрианов" class="img">
+						</a>
+						<span class="scroll-slider__name">
+							Василий Андрианов </span>
+					</div>
+					<div class="swiper-slide scroll-slider__slide scroll-slider__slide_overlay">
+						<a data-type="text/html" data-youtube="" href="https://www.youtube.com/" class="scroll-slider__lightbox">
+							<img src="img/8_big_1.png" alt="Дмитрий Бастрыкин" class="img scroll-slider__thumb">
+						</a>
+						<a href="https://www.instagram.com" target="_blank" class="scroll-slider__link js-scroll-slider__link">
+							<img src="img/8_big_0.png" alt="Дмитрий Бастрыкин" class="img">
+						</a>
+						<span class="scroll-slider__name">
+							Дмитрий Бастрыкин </span>
+					</div>
+					<div class="swiper-slide scroll-slider__slide scroll-slider__slide_overlay">
+						<a data-type="text/html" data-youtube="" href="https://www.youtube.com/" class="scroll-slider__lightbox">
+							<img src="img/9_big_1.png" alt="Роман Тодоренко" class="img scroll-slider__thumb">
+						</a>
+						<a href="https://www.instagram.com/" target="_blank" class="scroll-slider__link js-scroll-slider__link">
+							<img src="img/9_big_0.png" alt="Роман Тодоренко" class="img">
+						</a>
+						<span class="scroll-slider__name">
+							Роман Тодоренко </span>
+					</div>
+				</div>
+			</div>
+
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="scroll-slider__scrollbar">
+							<div class="swiper-scrollbar scroll-slider__scroll js-scroll-slider__scroll"></div>
+						</div>
 					</div>
 				</div>
 			</div>
