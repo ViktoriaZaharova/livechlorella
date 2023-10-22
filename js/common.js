@@ -117,38 +117,12 @@ $(document).ready(function () {
 				},
 			});
 		});
-
-		document.querySelectorAll('.js-scroll-slider__lightbox').forEach((item) => {
-			item.onclick = function initBlueimp(event) {
-				event = event || window.event;
-				const target = event.target || event.srcElement;
-				const link = target.src ? target.parentNode : target;
-				const options = {
-					index: link,
-					event,
-					hidePageScrollbars: false,
-				};
-				const links = this.querySelectorAll('.scroll-slider__lightbox');
-				blueimp.Gallery(links, options);
-			};
-		});
-
-		document.querySelectorAll('.js-scroll-slider__link').forEach((item) => {
-			item.addEventListener('click', (event) => {
-				event.stopPropagation();
-			});
-		});
 	}
 });
 
-// document.getElementById('blueimp-gallery').onclick = function (event) {
-// 	event = event || window.event
-// 	var target = event.target || event.srcElement
-// 	var link = target.src ? target.parentNode : target
-// 	var options = { index: link, event: event }
-// 	var links = this.getElementsByTagName('a')
-// 	blueimp.Gallery(links, options)
-// }
+Fancybox.bind("[data-fancybox]", {
+	// Your custom options
+});
 
 // video iframe
 var videoPoster = document.querySelector('.js-videoPoster');

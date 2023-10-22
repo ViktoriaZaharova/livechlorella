@@ -373,6 +373,7 @@ h2 {
   font-weight: 900;
 }
 .tab-header li {
+  cursor: pointer;
   width: 100%;
   border-bottom: 0.1rem solid #CFD4D1;
   position: relative;
@@ -489,4 +490,20 @@ h2 {
 .parallax {
   position: relative;
   overflow: hidden;
+}
+
+.blueimp-gallery > .next {
+  background: url("../img/next-gallery.svg") no-repeat center;
+}
+
+.blueimp-gallery > .prev {
+  background: url("../img/prev-gallery.svg") no-repeat center;
+}
+
+.blueimp-gallery > .close {
+  background: url("../img/close-gallery.svg") no-repeat center;
+}
+
+.video-content {
+  max-width: min(1280px, 80%) !important;
 }

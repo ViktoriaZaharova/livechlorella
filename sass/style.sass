@@ -276,6 +276,7 @@ h2
 	font-size: 24px
 	font-weight: 900
 	li
+		cursor: pointer
 		width: 100%
 		border-bottom: 0.1rem solid #CFD4D1
 		position: relative
@@ -311,13 +312,14 @@ h2
 				transform: scaleX(1)
 			&:after
 				width: calc(100% + 6px)
-				
+
 				box-shadow: 0 0 0 2px $accent
 
 .tab-content
 	width: 100%
 	&__item
 		display: none
+		
 		&.active
 			display: block
 
@@ -368,4 +370,35 @@ h2
 	position: relative
 	overflow: hidden
 
-C
+// .blueimp-gallery-display>.next,.blueimp-gallery-display>.prev
+// 	position: absolute
+// 	top: 50%
+// 	left: 15px
+// 	width: 8px
+// 	height: 20px
+// 	padding: 10px 14px 10px 18px
+// 	margin-top: -23px
+// 	-webkit-box-sizing: content-box
+// 	-moz-box-sizing: content-box
+// 	box-sizing: content-box
+// 	background: #222 url('../img/prev.png') center no-repeat
+// 	background-color: rgba(0,0,0,.5)
+// 	border: 3px solid #fff
+// 	-webkit-border-radius: 30px
+// 	-moz-border-radius: 30px
+// 	border-radius: 30px
+// 	opacity: .5
+// 	cursor: pointer
+// 	display: none
+
+.blueimp-gallery > .next
+	background: url('../img/next-gallery.svg') no-repeat center
+
+.blueimp-gallery > .prev
+	background: url('../img/prev-gallery.svg') no-repeat center
+		
+.blueimp-gallery > .close
+	background: url('../img/close-gallery.svg') no-repeat center
+
+.video-content
+	max-width: min(1280px, 80%) !important	
