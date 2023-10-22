@@ -90,26 +90,26 @@ input, textarea, select {
   border: none;
   border-radius: 10px;
   width: 100%;
-  height: 54px;
+  height: 40px;
   background: transparent;
   color: #000;
-  font-size: 15px;
+  font-size: 16px;
   cursor: pointer;
 }
 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder, select::-webkit-input-placeholder {
-  color: #595959;
+  color: #000;
 }
 input::-moz-placeholder, textarea::-moz-placeholder, select::-moz-placeholder {
-  color: #595959;
+  color: #000;
 }
 input:-ms-input-placeholder, textarea:-ms-input-placeholder, select:-ms-input-placeholder {
-  color: #595959;
+  color: #000;
 }
 input::-ms-input-placeholder, textarea::-ms-input-placeholder, select::-ms-input-placeholder {
-  color: #595959;
+  color: #000;
 }
 input::placeholder, textarea::placeholder, select::placeholder {
-  color: #595959;
+  color: #000;
 }
 input:hover, input:focus, textarea:hover, textarea:focus, select:hover, select:focus {
   outline: none;
@@ -259,6 +259,10 @@ h2 {
   color: #47554C;
 }
 .bg-white h2 {
+  color: #207C3F;
+}
+
+.color-accent {
   color: #207C3F;
 }
 

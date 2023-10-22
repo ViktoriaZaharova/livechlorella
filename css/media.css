@@ -43,7 +43,7 @@
   h1 {
     font-size: 44px;
   }
-  h2 {
+  h2, .modal-title {
     font-size: 36px;
   }
   header {
@@ -440,6 +440,25 @@
     bottom: 2.4rem;
     left: 2.4rem;
     max-width: calc(50% - 2.4rem);
+  }
+  .modal__close {
+    left: -66px;
+    width: 56px;
+    height: 56px;
+    padding: 10px;
+  }
+  .product-item__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 @media screen and (min-width: 1440px) {

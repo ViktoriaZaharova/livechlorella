@@ -371,7 +371,7 @@
 									вопросах качества и особенностей таких продуктов.</p>
 							</div>
 
-							<a href="#details" class="btn btn-white">подробнее</a>
+							<a href="#details" class="btn btn-white open_modal">подробнее</a>
 						</div>
 					</div>
 				</div>
@@ -702,12 +702,14 @@
 													<ul class="tab-content my-ul">
 														<li class="tab-content__item js-tab-content active" data-tab="1">
 															<div class="price-product">
-																<div class="price">4740 ₽</div>
+																<div class="price number-animate" data-count="4740"></div>
+																<div class="price">₽</div>
 															</div>
 															<div class="dosage">
-																<p>12 бутылок на 12 недель приема</p>
+																<p><span class="number-animate" data-count="12"></span> бутылок на <span
+																		class="number-animate" data-count="12"></span> недель приема</p>
 															</div>
-															<a href="#basket" class="btn btn-accent add-basket">
+															<a href="#basket" class="btn btn-accent add-basket open_modal">
 																Добавить в корзину </a>
 														</li>
 														<li class="tab-content__item js-tab-content" data-tab="2">
@@ -717,7 +719,7 @@
 															<div class="dosage">
 																<p>4 бутылки на 4 недели приема</p>
 															</div>
-															<a href="#basket" class="btn btn-accent add-basket">
+															<a href="#basket" class="btn btn-accent add-basket open_modal">
 																Добавить в корзину </a>
 														</li>
 														<li class="tab-content__item js-tab-content" data-tab="3">
@@ -727,7 +729,7 @@
 															<div class="dosage">
 																<p>2 бутылки на 2 недели приема</p>
 															</div>
-															<a href="#basket" class="btn btn-accent add-basket">
+															<a href="#basket" class="btn btn-accent add-basket open_modal">
 																Добавить в корзину </a>
 														</li>
 													</ul>
@@ -874,8 +876,7 @@
 			<div class="swiper-container scroll-slider__container js-scroll-slider__container">
 				<div class="swiper-wrapper js-scroll-slider__lightbox">
 					<div class="swiper-slide scroll-slider__slide scroll-slider__slide_overlay">
-						<a data-fancybox="video" href="https://www.youtube.com/watch?v=ZoAyGwp1UsE"
-							class="scroll-slider__lightbox">
+						<a data-fancybox="video" href="https://www.youtube.com/watch?v=ZoAyGwp1UsE" class="scroll-slider__lightbox">
 							<img src="img/4_big_1.png" alt="Алексей Талалаев" class="img scroll-slider__thumb"></a>
 						<a href="https://www.instagram.com/aleks_jai/" target="_blank"
 							class="scroll-slider__link js-scroll-slider__link">
@@ -885,8 +886,8 @@
 							Алексей Талалаев </span>
 					</div>
 					<div class="swiper-slide scroll-slider__slide scroll-slider__slide_overlay">
-						<a data-fancybox="video"
-							href="https://www.youtube.com/watch?v=osenEDHagTw&amp;feature=emb_logo" class="scroll-slider__lightbox">
+						<a data-fancybox="video" href="https://www.youtube.com/watch?v=osenEDHagTw&amp;feature=emb_logo"
+							class="scroll-slider__lightbox">
 							<img src="img/6_big_1.png" alt="Марина Богомолова" class="img scroll-slider__thumb">
 						</a>
 						<a href="https://www.instagram.com/bogomolova8855/" target="_blank"
@@ -1001,12 +1002,118 @@
 		</footer>
 	</div>
 
+	<!-- modal -->
+	<div class="modal__div" id="details">
+		<a href="#" class="modal__close"><img src="img/close.svg" alt=""></a>
+		<div class="modal__wrapper">
+			<div class="modal__image"><img src="img/65ebf21bb0387b98b1de9acb2dba162e.jpeg" alt=""></div>
+			<div class="modal__body">
+				<div class="modal-box">
+					<div class="modal-title">Почему Хлорелла — величайшее открытие ХХ века.</div>
+					<div class="box-text">
+						<p>50 лет назад, изучая хлореллу, ученые открыли, что состав микроводоросли на порядки превосходит Полезные
+							высшие
+							растения: Женьшень, золотой корень, эхинацея, элеутерококк и пр.
+							Так человек открыл новый неисчерпаемый природный ресурс незаменимых БАВ для своего здоровья.</p>
+					</div>
+				</div>
+
+				<div class="modal-box">
+					<h3 class="h3">Нашим открытием стало применение живой клетки хлореллы для иммуномодуляции человека</h3>
+					<div class="box-text">
+						<p>50 лет назад, изучая хлореллу, ученые открыли, что состав микроводоросли на порядки превосходит Полезные
+							высшие
+							растения: Женьшень, золотой корень, эхинацея, элеутерококк и пр.
+							Так человек открыл новый неисчерпаемый природный ресурс незаменимых БАВ для своего здоровья.</p>
+						<h4 class="color-accent">Для восстановления после травм и физических нагрузок.
+							Ускоряет вывод из организма интоксикации, молочной и мочевой кислот, образующихся при физических
+							нагрузках.</h4>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal__div" id="compound">
+		<a href="#" class="modal__close"><img src="img/close.svg" alt=""></a>
+		<div class="modal__wrapper">
+			<div class="modal__image"><img src="img/65ebf21bb0387b98b1de9acb2dba162e.jpeg" alt=""></div>
+			<div class="modal__body">
+				<div class="modal-box">
+					<div class="modal-title">Почему Хлорелла — величайшее открытие ХХ века.</div>
+					<div class="box-text">
+						<p>50 лет назад, изучая хлореллу, ученые открыли, что состав микроводоросли на порядки превосходит Полезные
+							высшие
+							растения: Женьшень, золотой корень, эхинацея, элеутерококк и пр.
+							Так человек открыл новый неисчерпаемый природный ресурс незаменимых БАВ для своего здоровья.</p>
+					</div>
+				</div>
+
+				<div class="modal-box">
+					<h3 class="h3">Нашим открытием стало применение живой клетки хлореллы для иммуномодуляции человека</h3>
+					<div class="box-text">
+						<p>50 лет назад, изучая хлореллу, ученые открыли, что состав микроводоросли на порядки превосходит Полезные
+							высшие
+							растения: Женьшень, золотой корень, эхинацея, элеутерококк и пр.
+							Так человек открыл новый неисчерпаемый природный ресурс незаменимых БАВ для своего здоровья.</p>
+						<p>Для восстановления после травм и физических нагрузок.
+							Ускоряет вывод из организма интоксикации, молочной и мочевой кислот, образующихся при физических
+							нагрузках.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal__div" id="basket">
+		<a href="#" class="modal__close"><img src="img/close.svg" alt=""></a>
+		<div class="modal__wrapper">
+			<div class="modal__body">
+				<div class="modal-title">Корзина</div>
+				<div class="modal-title">Ваш заказ</div>
+
+
+				<form method="post" class="form-order">
+					<div class="form-order-row">
+						<div class="product-item__image"><img src="img/23_mid.png" alt=""></div>
+						<div class="form-order-body">
+							<div class="product-item__title">Напиток «Живая Хлорелла»</div>
+							<div class="product-item__text">4 бутылок на 4 недель приема</div>
+							<div class="product-item__content">
+								<div class="amount">
+									<span class="down"></span>
+									<input type="text" value="1" />
+									<span class="up"></span>
+								</div>
+									<div class="product-item__price">1 980 ₽</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="form-order-footer">
+						<div class="total-sum">
+							<p>Итоговая сумма :</p>
+							<div class="total-sum__value">1 980 ₽</div>
+						</div>
+						<button type="submit" class="btn btn-accent">оформить заказ</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<!-- Пoдлoжкa -->
+	<div class="overlay"></div>
+	<!-- modal end-->
+
+
 	<!-- add plugins js-->
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.bundle.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+	<script src="https://aishek.github.io/jquery-animateNumber/javascripts/jquery.animateNumber.js"></script>
 	<!-- add plugins js end-->
 
 	<script src="js/common.js"></script>

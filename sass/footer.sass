@@ -35,3 +35,195 @@ footer
 		color: #A6A91D
 		background: url('../img/author-icon.svg') left center no-repeat
 		background-size: 22px
+
+// modal
+.modal__div
+	position: fixed
+	max-width: 650px
+	width: 100%
+	height: 100%
+	top: 0
+	right: -100%
+	z-index: 101
+	justify-content: center
+	align-items: center
+	flex-direction: column
+	opacity: 1
+	transition: .3s
+
+.modal__close
+	position: absolute
+	z-index: 103
+	border-radius: 50%
+	top: 1.6rem
+	box-sizing: border-box
+	cursor: pointer
+	border: none
+	background-color: #FAFAFA
+	box-shadow: 0px 10px 20px rgba(50, 50, 71, 0.1), 0px 16px 40px rgba(50, 50, 71, 0.1)
+	@include d-flex
+	img
+		width: 100%
+		z-index: -1
+
+.modal__image
+	width: 100%
+	@include d-flex
+	img
+		width: 100%
+
+.modal__wrapper
+	background: #fafafa
+	color: #47554C
+	overflow-y: auto
+	width: 100%
+	height: 100%
+	overflow: auto
+	box-sizing: border-box
+	position: relative
+	.box-text
+		font-size: 16px
+
+.modal__body
+	width: 100%
+	padding: 40px
+
+.modal-title
+	color: $accent
+	font-weight: 900
+	line-height: normal
+	margin: 0 0 16px
+
+.modal-box
+	margin: 0 0 52px
+	&:last-child
+		margin: 0
+	h3
+		color: $accent
+		margin: 0 0 16px
+	h4
+		margin: 12px 0 0
+		font-weight: bold
+	.color-accent
+		color: $accent
+	.box-text
+		p
+			margin: 0 0 12px
+			&:last-child
+				margin: 0
+
+.overlay
+	z-index: 100
+	position: fixed
+	background: #252c2780
+	width: 100%
+	height: 100%
+	top: 0
+	left: 0
+	cursor: pointer
+	display: none
+
+.form-order
+	width: 100%
+	[type='submit']
+		margin: 32px 0 0
+
+.form-order-row
+	width: 100%
+	display: flex
+	align-items: center
+	padding: 24px 0
+	border-bottom: 0.1rem solid #CFD4D1
+
+.product-item
+	&__image
+		@include d-flex
+		width: 100px
+	&__title
+		color: #207C3F
+		font-weight: 700
+		margin: 0 0 4px
+	&__content
+		margin-top: 12px
+	&__price
+		font-weight: bold
+
+.form-order-body
+	width: calc(100% - 100px)
+	padding: 0 0 0 15px
+
+.form-order-footer
+	padding: 24px 0 0
+
+.total-sum
+	width: 100%
+	display: flex
+	align-items: center
+	flex-wrap: wrap
+	p
+		font-weight: bold
+	&__value
+		color: $accent
+		font-weight: 900
+		font-size: 24px
+		margin: 0 0 0 auto	
+
+.amount
+	display: flex
+	align-items: stretch
+	padding: 2px
+	border: 1px solid #CFD4D1
+	border-radius: 10px
+	width: 134px
+	span
+		@include d-flex
+		width: 36px
+		height: 36px
+		min-width: 36px
+		padding: 5px
+		position: relative
+		border: 1px solid #207C3F
+		color: #207C3F
+		background: transparent
+		transition-property: background-color, color
+		transition-duration: 0.3s
+		cursor: pointer
+		box-sizing: border-box
+		&:hover
+			background: $accent
+			color: #fafafa
+			&::before, &::after
+				background: #fafafa
+		&::before
+			content: ''
+			position: absolute
+			border-radius: 0.1rem
+			background-color: $accent
+			top: 50%
+			left: 50%
+			transform: translate(-50%,-50%)
+			width: 12px
+			height: 2px
+
+	.down
+		border-top-left-radius: 8px
+		border-bottom-left-radius: 8px
+	.up
+		border-top-right-radius: 8px
+		border-bottom-right-radius: 8px
+		&::after
+			content: ''
+			position: absolute
+			border-radius: 0.1rem
+			background-color: $accent
+			top: 50%
+			left: 50%
+			transform: translate(-50%,-50%)
+			width: 2px
+			height: 12px
+	input
+		height: 36px
+		text-align: center
+		padding: 0
+		width: 100%
+		background: transparent

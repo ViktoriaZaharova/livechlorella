@@ -124,6 +124,76 @@ Fancybox.bind("[data-fancybox]", {
 	// Your custom options
 });
 
+// animate number
+var target = $('.number-animate');
+var targetPos = target.offset().top;
+var winHeight = $(window).height();
+var scrollToElem = targetPos - winHeight;
+$(window).scroll(function () {
+	var winScrollTop = $(this).scrollTop();
+	if (winScrollTop > scrollToElem) {
+		$({ blurRadius: 5 }).animate(
+			{ blurRadius: 0 },
+			{
+				duration: 3500,
+				easing: "swing",
+			}
+		);
+		var comma_separator_number_step = $.animateNumber.numberStepFactories.separator(
+			" "
+		);
+		$(".number-animate").each(function () {
+			var tcount = $(this).data("count");
+			$(this).animateNumber(
+				{
+					number: tcount,
+					easing: "easeInQuad",
+					numberStep: comma_separator_number_step
+				},
+				1000
+			);
+		});
+	}
+});
+
+// модальные окна (несколько)
+$(function () {
+	let overlay = $('.overlay'),
+		open_modal = $('.open_modal'),
+		close = $('.modal__close, .overlay'),
+		modal = $('.modal__div');
+
+	open_modal.on('click', function (event) {
+		event.preventDefault();
+
+		modal.animate({
+			right: '-100%'
+		});
+
+		let div = $(this).attr('href');
+		overlay.fadeIn(400,
+			function () {
+				$(div)
+					.animate({
+						right: '0'
+					});
+			});
+	});
+
+	close.on('click', function (e) {
+		e.preventDefault();
+		modal
+			.animate({
+				right: '-100%'
+			},
+				function () {
+					overlay.fadeOut(400);
+				}
+			);
+	});
+});
+//end
+
 // video iframe
 var videoPoster = document.querySelector('.js-videoPoster');
 
@@ -189,21 +259,7 @@ const swiper3 = new Swiper('.offer-swiper', {
 	}
 });
 
-// tabs
-// $(document).ready(function ($) {
-// 	$('.tabs-wrap li a').click(function (e) {
-// 		e.preventDefault();
-// 	});
-// 	$('.tabs-wrap li').click(function () {
-// 		$('.tabs-wrap li').removeClass('active');
-// 		$(this).addClass('active').closest('.tabs-wrap').find('.tab-content').removeClass('active');
-
-// 		var selectTab = $(this).find('a').attr("href");
-
-// 		$(selectTab).addClass('active');
-// 	});
-// });
-
+// products
 $(".js-tab-trigger").click(function () {
 	var id = $(this).attr('data-tab'),
 		content = $(this).parents('.tabs').find('.js-tab-content[data-tab="' + id + '"]');
@@ -224,5 +280,21 @@ $('.go_to').click(function (e) {
 			scrollTop: $(scroll_el).offset().top
 		}, 500);
 	}
+	return false;
+});
+
+// amount
+$('.down').on("click", function () {
+	let $input = $(this).parent().find('input');
+	let count = parseInt($input.val()) - 1;
+	count = count < 1 ? 1 : count;
+	$input.val(count);
+	$input.change();
+	return false;
+});
+$('.up').on("click", function () {
+	let $input = $(this).parent().find('input');
+	$input.val(parseInt($input.val()) + 1);
+	$input.change();
 	return false;
 });
