@@ -43,17 +43,24 @@ footer
 	width: 100%
 	height: 100%
 	top: 0
-	right: -100%
-	z-index: 101
+	right: 0
+	z-index: 1002
 	justify-content: center
 	align-items: center
 	flex-direction: column
-	opacity: 1
-	transition: .3s
+	opacity: 0
+	visibility: hidden
+	transition-duration: 0.3s
+	transition-property: visibility, opacity
+	&.active
+		opacity: 1
+		visibility: visible
+		.modal__wrapper
+			transform: none
 
 .modal__close
 	position: absolute
-	z-index: 103
+	z-index: 1003
 	border-radius: 50%
 	top: 1.6rem
 	box-sizing: border-box
@@ -75,14 +82,19 @@ footer
 .modal__wrapper
 	background: #fafafa
 	color: #47554C
-	overflow-y: auto
 	width: 100%
 	height: 100%
-	overflow: auto
 	box-sizing: border-box
-	position: relative
+	position: absolute
+	top: 0
+	right: 0
+	transition-duration: 0.3s
+	transform: translateX(100%)
 	.box-text
 		font-size: 16px
+	&-content
+		overflow-y: auto
+		height: inherit
 
 .modal__body
 	width: 100%
@@ -113,7 +125,7 @@ footer
 				margin: 0
 
 .overlay
-	z-index: 100
+	z-index: 1001
 	position: fixed
 	background: #252c2780
 	width: 100%
@@ -166,7 +178,7 @@ footer
 		color: $accent
 		font-weight: 900
 		font-size: 24px
-		margin: 0 0 0 auto	
+		margin: 0 0 0 auto
 
 .amount
 	display: flex

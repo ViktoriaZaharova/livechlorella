@@ -52,6 +52,10 @@ body {
           font-feature-settings: "pnum" on, "lnum" on;
 }
 
+body.menu-open {
+  overflow: hidden;
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -174,7 +178,8 @@ button:hover, button:focus, .btn:hover, .btn:focus {
   text-transform: uppercase;
   text-align: center;
   min-width: 245px;
-  padding: 16px;
+  padding: 13px 16px;
+  height: auto;
   font-size: 16px;
   font-weight: bold;
   letter-spacing: 0.09em;
@@ -428,6 +433,12 @@ h2 {
   width: calc(100% + 6px);
   -webkit-box-shadow: 0 0 0 2px #207C3F;
           box-shadow: 0 0 0 2px #207C3F;
+}
+
+.tab-header__item-subtitle {
+  display: block;
+  font-weight: normal;
+  font-size: 20px;
 }
 
 .tab-content {

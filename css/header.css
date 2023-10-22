@@ -11,6 +11,15 @@ header .container {
   max-width: 1328px;
 }
 
+.header-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .phone {
   color: #FAFAFA;
   font-size: 24px;
@@ -145,4 +154,46 @@ header .container {
 .language-item__text {
   border-bottom: 0.1rem solid currentColor;
   display: block;
+}
+
+.btn-burger {
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  cursor: pointer;
+  width: 24px;
+  height: 17px;
+  position: relative;
+}
+.btn-burger span {
+  display: block;
+  width: 100%;
+  height: 3px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  border-radius: 4px;
+  background: #207C3F;
+}
+.btn-burger.active span {
+  position: absolute;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: 8px;
+  left: 2px;
+  width: 24px;
+}
+.btn-burger.active span:nth-child(2) {
+  width: 0;
+}
+.btn-burger.active span:last-child {
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
 }

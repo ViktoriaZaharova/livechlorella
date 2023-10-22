@@ -124,37 +124,7 @@ Fancybox.bind("[data-fancybox]", {
 	// Your custom options
 });
 
-// animate number
-var target = $('.number-animate');
-var targetPos = target.offset().top;
-var winHeight = $(window).height();
-var scrollToElem = targetPos - winHeight;
-$(window).scroll(function () {
-	var winScrollTop = $(this).scrollTop();
-	if (winScrollTop > scrollToElem) {
-		$({ blurRadius: 5 }).animate(
-			{ blurRadius: 0 },
-			{
-				duration: 3500,
-				easing: "swing",
-			}
-		);
-		var comma_separator_number_step = $.animateNumber.numberStepFactories.separator(
-			" "
-		);
-		$(".number-animate").each(function () {
-			var tcount = $(this).data("count");
-			$(this).animateNumber(
-				{
-					number: tcount,
-					easing: "easeInQuad",
-					numberStep: comma_separator_number_step
-				},
-				1000
-			);
-		});
-	}
-});
+
 
 // модальные окна (несколько)
 $(function () {
@@ -166,30 +136,22 @@ $(function () {
 	open_modal.on('click', function (event) {
 		event.preventDefault();
 
-		modal.animate({
-			right: '-100%'
-		});
+		modal.removeClass('active');
 
 		let div = $(this).attr('href');
-		overlay.fadeIn(400,
+		overlay.fadeIn(
 			function () {
-				$(div)
-					.animate({
-						right: '0'
-					});
+				$(div).addClass('active');
 			});
 	});
 
 	close.on('click', function (e) {
 		e.preventDefault();
-		modal
-			.animate({
-				right: '-100%'
-			},
-				function () {
-					overlay.fadeOut(400);
-				}
-			);
+		overlay.fadeOut(
+			function () {
+				modal.removeClass('active');
+			});
+		
 	});
 });
 //end
@@ -221,22 +183,6 @@ const swiper = new Swiper('.swiper', {
 
 });
 
-// const swiper2 = new Swiper('.js-scroll-slider__container', {
-// 	freeMode: true,
-// 	slidesPerView: 'auto',
-// 	spaceBetween: 16,
-// 	scrollbar: {
-// 		el: ($(this).parents('.js-scroll-slider').find('.js-scroll-slider__scroll')),
-// 		draggable: true,
-// 		dragClass: ($(this).parents('.js-scroll-slider').find('.js-scroll-slider__scroll')),
-// 		snapOnRelease: false,
-// 	},
-// 	breakpoints: {
-// 		1200: {
-// 			spaceBetween: 48,
-// 		},
-// 	},
-// });
 
 const swiper3 = new Swiper('.offer-swiper', {
 	// autoHeight: true,
@@ -279,7 +225,11 @@ $('.go_to').click(function (e) {
 		$('html, body').animate({
 			scrollTop: $(scroll_el).offset().top
 		}, 500);
+		$('.navbar-menu').removeClass('active');
+		$('.btn-burger').removeClass('active');
+		$('body').removeClass('menu-open');
 	}
+	
 	return false;
 });
 
@@ -297,4 +247,11 @@ $('.up').on("click", function () {
 	$input.val(parseInt($input.val()) + 1);
 	$input.change();
 	return false;
+});
+
+// mobile menu
+$('.btn-burger').on('click', function () {
+	$('body').toggleClass('menu-open');
+	$(this).toggleClass('active');
+	$('.navbar-menu').toggleClass('active');
 });

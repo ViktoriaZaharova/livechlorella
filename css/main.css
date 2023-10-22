@@ -119,6 +119,18 @@
   border: 0.1rem solid #FAFAFA;
 }
 
+.uniqueness-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .complex h2 {
   font-size: 30px;
 }
@@ -306,6 +318,7 @@
 
 .rounded {
   overflow: hidden;
+  border-radius: 40px !important;
   background-color: #207C3F;
   -webkit-box-shadow: 0px 20px 20px rgba(50, 50, 71, 0.1), 0px 32px 40px rgba(50, 50, 71, 0.1);
   box-shadow: 0px 20px 20px rgba(50, 50, 71, 0.1), 0px 32px 40px rgba(50, 50, 71, 0.1);
@@ -426,7 +439,7 @@
   margin-top: 24px;
   width: 100%;
   color: #47554C;
-  border-radius: 32px;
+  border-radius: 40px;
   background-color: #FAFAFA;
   -webkit-box-shadow: 0px 20px 20px rgba(50, 50, 71, 0.1), 0px 32px 40px rgba(50, 50, 71, 0.1);
           box-shadow: 0px 20px 20px rgba(50, 50, 71, 0.1), 0px 32px 40px rgba(50, 50, 71, 0.1);
@@ -473,8 +486,9 @@
 }
 
 .parallax-item-offers-one {
+  width: 209px;
   top: auto !important;
-  bottom: 14.7rem;
+  bottom: 147px;
   left: -10rem !important;
   -webkit-filter: blur(6px);
   filter: blur(6px);
@@ -525,7 +539,7 @@
 .offers-item {
   padding: 32px 0;
   margin: 0 40px 0 0;
-  max-width: 456px;
+  max-width: 576px;
   width: 100%;
   border: 0.1rem solid #CFD4D1;
   border-radius: 32px;
@@ -538,6 +552,21 @@
 .offers-item h3 {
   color: #207C3F;
   font-weight: 900;
+}
+
+.discount-box {
+  font-size: 24px;
+  margin-left: auto;
+  padding: 4px 8px;
+  color: #FAFAFA;
+  border-radius: 6px;
+  background-color: #811729;
+}
+
+.old-price {
+  text-decoration-line: line-through;
+  color: #838C86;
+  margin: 0 0 -8px;
 }
 
 .offer-swiper .swiper-slide {
@@ -569,6 +598,11 @@
 
 .instructions-box__icon {
   margin: 0 0 24px;
+  width: 80px;
+  height: 80px;
+}
+.instructions-box__icon img {
+  max-height: 100%;
 }
 .instructions-box .h3 {
   font-weight: bold;
@@ -605,6 +639,7 @@
 }
 .video-reviews h2 {
   color: #207C3F;
+  margin: 0;
 }
 
 .parallax-item-reviews-one {
@@ -660,11 +695,16 @@
 .contacts-box__item:last-child {
   margin: 0;
 }
+.contacts-box h3 {
+  font-weight: bold;
+}
 .contacts-box .box-text {
   font-size: 20px;
 }
 
 .contacts-phone {
+  font-weight: bold;
+  margin: 16px 0 0;
   color: #fff;
 }
 .contacts-phone:hover {
